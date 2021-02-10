@@ -22,13 +22,13 @@
 
 #=========================== 手动调平 ==================================
 
->cfg_point_number			4			#手动调平的个数:(可设3,4,5个点)
+>cfg_point_number			5			#手动调平的个数:(可设3,4,5个点)
 
->cfg_point1:30,30						
->cfg_point2:235,30
->cfg_point3:235,190						#手动调平时的5个点的位置坐标
->cfg_point4:30,190
->cfg_point5:100,100
+>cfg_point1:37,33						
+>cfg_point2:221,33
+>cfg_point3:221,183						#手动调平时的5个点的位置坐标
+>cfg_point4:37,183
+>cfg_point5:129,108
 
 #========================== 自动调平 ===================================
 
@@ -143,26 +143,26 @@
 >DEFAULT_X_STEPS_PER_UNIT	80	#X轴默认脉冲 (steps/mm)	
 >DEFAULT_Y_STEPS_PER_UNIT	80	#Y轴默认脉冲 (steps/mm)	
 >DEFAULT_Z_STEPS_PER_UNIT	400	#Z轴默认脉冲 (steps/mm)	
->DEFAULT_E0_STEPS_PER_UNIT	400	#E轴默认脉冲 (steps/mm)	
+>DEFAULT_E0_STEPS_PER_UNIT	408	#E轴默认脉冲 (steps/mm)	
 >DEFAULT_E1_STEPS_PER_UNIT	90	#E轴默认脉冲 (steps/mm)	
 
 >DEFAULT_X_MAX_FEEDRATE		300	#X轴默认速度 (mm/s)		
 >DEFAULT_Y_MAX_FEEDRATE		300	#Y轴默认速度 (mm/s)		
 >DEFAULT_Z_MAX_FEEDRATE		5	#Z轴默认速度 (mm/s)		
->DEFAULT_E0_MAX_FEEDRATE	10	#E轴默认速度 (mm/s)		
->DEFAULT_E1_MAX_FEEDRATE	70	#E轴默认速度 (mm/s)	
+>DEFAULT_E0_MAX_FEEDRATE	30	#E轴默认速度 (mm/s)		
+>DEFAULT_E1_MAX_FEEDRATE	30	#E轴默认速度 (mm/s)	
 
->DEFAULT_X_MAX_ACCELERATION	1000	#X轴默认最大加速度 (change/s) change = mm/s
->DEFAULT_Y_MAX_ACCELERATION	1000	#Y轴默认最大加速度 (change/s) change = mm/s
->DEFAULT_Z_MAX_ACCELERATION	200	#Z轴默认最大加速度 (change/s) change = mm/s
->DEFAULT_E0_MAX_ACCELERATION	80000	#E轴默认最大加速度 (change/s) change = mm/s
+>DEFAULT_X_MAX_ACCELERATION	1200	#X轴默认最大加速度 (change/s) change = mm/s
+>DEFAULT_Y_MAX_ACCELERATION	1200	#Y轴默认最大加速度 (change/s) change = mm/s
+>DEFAULT_Z_MAX_ACCELERATION	100	#Z轴默认最大加速度 (change/s) change = mm/s
+>DEFAULT_E0_MAX_ACCELERATION	10000	#E轴默认最大加速度 (change/s) change = mm/s
 >DEFAULT_E1_MAX_ACCELERATION	10000	#E轴默认最大加速度 (change/s) change = mm/s
 
->DEFAULT_ACCELERATION		100	#X,Y,Z,E 打印时的默认加速度		
->DEFAULT_RETRACT_ACCELERATION	30000	#X,Y,Z,E 回抽默认加速度		
->DEFAULT_TRAVEL_ACCELERATION	3000	#X,Y,Z 非打印时的默认加速度	
+>DEFAULT_ACCELERATION		1200	#X,Y,Z,E 打印时的默认加速度		
+>DEFAULT_RETRACT_ACCELERATION	5000	#X,Y,Z,E 回抽默认加速度		
+>DEFAULT_TRAVEL_ACCELERATION	5000	#X,Y,Z 非打印时的默认加速度	
 >DEFAULT_MINIMUMFEEDRATE	0.0	#默认最小速度						
->DEFAULT_MINSEGMENTTIME		20000	#缓存空时，一个移动所需的最小时间(单位ms). 
+>DEFAULT_MINSEGMENTTIME		10000	#缓存空时，一个移动所需的最小时间(单位ms). 
 >DEFAULT_MINTRAVELFEEDRATE	0.0	#		
 
 >DEFAULT_XJERK 			15.0	#默认X轴 Jerk (mm/s)	
